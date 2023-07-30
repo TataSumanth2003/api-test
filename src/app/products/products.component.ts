@@ -35,7 +35,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class ProductsComponent implements OnInit {
 
-  displayedColumns: string[] = ['product_name', 'product', 'cost', 'product_image','product_material'];
+  displayedColumns: string[] = ['product_name', 'product', 'cost', 'product_image','product_material','id'];
   dataSource :any[]=[];
   constructor(public Product: ProductService) { }
 
@@ -49,7 +49,9 @@ export class ProductsComponent implements OnInit {
         'product':res[i].product, 
         'cost':res[i].cost,
           'product_image':res[i].product_image,
-        'product_material':res[i].product_material};
+        'product_material':res[i].product_material,
+        'id':res[i].id
+      };
           table.push(obj);
       }
       this.dataSource = table;
