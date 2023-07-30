@@ -1,0 +1,52 @@
+<div class="form">
+    <div>
+      <label for="createdAt">Created Date </label>
+      <input type="text" id="createdAt" name="createdAt" [(ngModel)]="user.createdAt" required>
+    </div>
+    
+    <div>
+      <label for="product_name">Product Name</label>
+      <input type="text" id="product_name" name="product_name" [(ngModel)]="user.product_name" required>
+    </div>
+    
+    <div>
+      <label for="product_image">Product Image</label>
+      <input type="text" id="product_image" name="product_image" [(ngModel)]="user.product_image" required>
+    </div>
+    
+    <div>
+      <label for="product_type">Product Type</label>
+      <input type="text" id="product_type" name="product_type"  [(ngModel)]="user.product_type" required>
+    </div>
+
+    <div>
+        <label for="cost">Cost</label>
+        <input type="text" id="cost" name="cost"  [(ngModel)]="user.cost" required>
+      </div>
+
+      <div>
+        <label for="description">Description</label>
+        <input type="text" id="description" name="description"  [(ngModel)]="user.description" required>
+      </div>
+
+      <div>
+        <label for="product_material">Product Material</label>
+        <input type="text" id="product_material" name="product_material"  [(ngModel)]="user.product_material" required>
+      </div>
+
+      <div>
+        <label for="product">Product</label>
+        <input type="text" id="product_type" name="product"  [(ngModel)]="user.product" required>
+      </div>
+
+      <div>
+        <label for="id">Id</label>
+        <input type="text" id="id" name="id"  [(ngModel)]="user.id" required>
+      </div>
+    <button type="submit" (click)="addProduct()">save</button>&nbsp;&nbsp;&nbsp;
+    <button type="submit" (click)="Delete(user.id)">Delete</button>&nbsp;&nbsp;&nbsp;
+    <button type="submit" (click)="update()">Update</button>&nbsp;&nbsp;&nbsp;
+    <button type="submit" (click)="Read(user.id)">Read</button>
+    <!-- <button type="submit" (click)="Read()">Read</button> -->
+
+  </div>
